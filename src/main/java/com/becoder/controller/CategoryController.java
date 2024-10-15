@@ -16,7 +16,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 import com.becoder.dto.CategoryDto;
-import com.becoder.dto.CategoryReponse;
+import com.becoder.dto.CategoryResponse;
 import com.becoder.entity.Category;
 import com.becoder.exception.ResourceNotFoundException;
 import com.becoder.service.CategoryService;
@@ -58,7 +58,7 @@ public class CategoryController {
 	@GetMapping("/active")
 	public ResponseEntity<?> getActiveCategory() {
 
-		List<CategoryReponse> allCategory = categoryService.getActiveCategory();
+		List<CategoryResponse> allCategory = categoryService.getActiveCategory();
 		if (CollectionUtils.isEmpty(allCategory)) {
 			return ResponseEntity.noContent().build();
 		} else {

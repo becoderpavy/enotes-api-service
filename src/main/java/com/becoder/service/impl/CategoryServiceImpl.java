@@ -11,7 +11,7 @@ import org.springframework.util.ObjectUtils;
 import org.springframework.util.StringUtils;
 
 import com.becoder.dto.CategoryDto;
-import com.becoder.dto.CategoryReponse;
+import com.becoder.dto.CategoryResponse;
 import com.becoder.entity.Category;
 import com.becoder.exception.ResourceNotFoundException;
 import com.becoder.repository.CategoryRepository;
@@ -74,10 +74,10 @@ public class CategoryServiceImpl implements CategoryService {
 	}
 
 	@Override
-	public List<CategoryReponse> getActiveCategory() {
+	public List<CategoryResponse> getActiveCategory() {
 
 		List<Category> categories = categoryRepo.findByIsActiveTrueAndIsDeletedFalse();
-		List<CategoryReponse> categoryList = categories.stream().map(cat -> mapper.map(cat, CategoryReponse.class))
+		List<CategoryResponse> categoryList = categories.stream().map(cat -> mapper.map(cat, CategoryResponse.class))
 				.toList();
 		return categoryList;
 	}
