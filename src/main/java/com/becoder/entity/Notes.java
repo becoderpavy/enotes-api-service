@@ -34,5 +34,5 @@ public class Notes extends BaseModel {
 
 	@ManyToOne
 	private FileDetails fileDetails;
-	
+
 }
