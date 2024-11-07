@@ -66,11 +66,10 @@ public class NotesController {
 	public ResponseEntity<?> getAllNotesByUser(@RequestParam(name = "pageNo", defaultValue = "0") Integer pageNo,
 			@RequestParam(name = "pageSize", defaultValue = "10") Integer pageSize) {
 		Integer userId = 2;
-		NotesResponse notes = notesService.getAllNotesByUser(userId,pageNo,pageSize);
-//		if (CollectionUtils.isEmpty(notes)) {
-//			return ResponseEntity.noContent().build();
-//		}
+		NotesResponse notes = notesService.getAllNotesByUser(userId, pageNo, pageSize);
 		return CommonUtil.createBuildResponse(notes, HttpStatus.OK);
 	}
+	
+	
 
 }
