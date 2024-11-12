@@ -1,5 +1,6 @@
 package com.becoder.dto;
 
+import java.time.LocalDateTime;
 import java.util.Date;
 
 import lombok.AllArgsConstructor;
@@ -30,6 +31,10 @@ public class NotesDto {
 	private Date updatedOn;
 
 	private FilesDto fileDetails;
+
+	private Boolean isDeleted;
+
+	private LocalDateTime deletedOn;
 
 	@Getter
 	@Setter
