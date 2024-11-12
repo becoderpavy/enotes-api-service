@@ -1,5 +1,6 @@
 package com.becoder.repository;
 
+import java.time.LocalDateTime;
 import java.util.List;
 
 import org.springframework.data.domain.Page;
@@ -15,5 +16,7 @@ public interface NotesRepository extends JpaRepository<Notes, Integer> {
 	List<Notes> findByCreatedByAndIsDeletedTrue(Integer userId);
 
 	Page<Notes> findByCreatedByAndIsDeletedFalse(Integer userId, Pageable pageable);
+
+	List<Notes> findAllByIsDeletedAndDeletedOnBefore(boolean b, LocalDateTime cutOffDate);
 
 }
