@@ -7,7 +7,7 @@ import org.springframework.http.ResponseEntity;
 import com.becoder.handler.GenericResponse;
 
 public class CommonUtil {
-
+	
 	public static ResponseEntity<?> createBuildResponse(Object data, HttpStatus status) {
 
 		GenericResponse response = GenericResponse.builder().responseStatus(status).status("succes").message("succes")
