@@ -1,7 +1,5 @@
 package com.becoder.dto;
 
-import com.becoder.entity.Notes;
-
 import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Getter;

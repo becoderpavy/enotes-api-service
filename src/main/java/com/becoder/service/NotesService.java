@@ -7,7 +7,6 @@ import org.springframework.web.multipart.MultipartFile;
 import com.becoder.dto.FavouriteNoteDto;
 import com.becoder.dto.NotesDto;
 import com.becoder.dto.NotesResponse;
-import com.becoder.entity.FavouriteNote;
 import com.becoder.entity.FileDetails;
 
 public interface NotesService {

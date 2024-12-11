@@ -14,7 +14,6 @@ import com.becoder.dto.CategoryDto;
 import com.becoder.dto.TodoDto;
 import com.becoder.dto.TodoDto.StatusDto;
 import com.becoder.dto.UserDto;
-import com.becoder.entity.Role;
 import com.becoder.enums.TodoStatus;
 import com.becoder.exception.ExistDataException;
 import com.becoder.exception.ResourceNotFoundException;
