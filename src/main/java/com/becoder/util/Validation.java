@@ -13,7 +13,7 @@ import org.springframework.util.StringUtils;
 import com.becoder.dto.CategoryDto;
 import com.becoder.dto.TodoDto;
 import com.becoder.dto.TodoDto.StatusDto;
-import com.becoder.dto.UserDto;
+import com.becoder.dto.UserRequest;
 import com.becoder.enums.TodoStatus;
 import com.becoder.exception.ExistDataException;
 import com.becoder.exception.ResourceNotFoundException;
@@ -84,7 +84,7 @@ public class Validation {
 		}
 	}
 
-	public void userValidation(UserDto userDto) {
+	public void userValidation(UserRequest userDto) {
 
 		if (!StringUtils.hasText(userDto.getFirstName())) {
 			throw new IllegalArgumentException("first name is invalid");
