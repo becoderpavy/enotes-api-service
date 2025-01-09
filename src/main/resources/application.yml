@@ -3,7 +3,7 @@ spring:
     name: enotes-api-service
   profiles:
     active:
-    - uat
+    - prod
     
 ---
 # dev config
@@ -72,7 +72,7 @@ file:
     path: notes/
     
 ---
-# uat Config
+# uat config
 spring:
   datasource:
     url: jdbc:mysql://localhost:3306/enotes_uat
