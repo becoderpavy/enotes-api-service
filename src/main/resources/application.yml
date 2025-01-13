@@ -28,14 +28,14 @@ spring:
   mail:
     host: smtp.gmail.com
     username: techlife246@gmail.com
-    password: nflw mgjz qlld huay
+    password: yyjg zdkl aosq oksi
     port: 587
     properties:
       mail:
         smtp:
           auth: true
-        starttls:
-          enable: true       
+          starttls:
+            enable: true    
 file:
   upload:
     path: notes/

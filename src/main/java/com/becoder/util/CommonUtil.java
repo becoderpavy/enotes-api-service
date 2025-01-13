@@ -1,14 +1,11 @@
 package com.becoder.util;
 
 import org.apache.commons.io.FilenameUtils;
-import org.modelmapper.ModelMapper;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.security.core.context.SecurityContextHolder;
 
 import com.becoder.config.security.CustomUserDetails;
-import com.becoder.dto.UserResponse;
 import com.becoder.entity.User;
 import com.becoder.handler.GenericResponse;
 
@@ -17,7 +14,6 @@ import jakarta.servlet.http.HttpServletRequest;
 public class CommonUtil {
 
 	public static ResponseEntity<?> createBuildResponse(Object data, HttpStatus status) {
-
 		GenericResponse response = GenericResponse.builder().responseStatus(status).status("succes").message("succes")
 				.data(data).build();
 		return response.create();
