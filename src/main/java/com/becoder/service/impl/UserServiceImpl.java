@@ -3,7 +3,6 @@ package com.becoder.service.impl;
 import java.util.UUID;
 
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.stereotype.Service;
 import org.springframework.util.ObjectUtils;
@@ -17,6 +16,7 @@ import com.becoder.exception.ResourceNotFoundException;
 import com.becoder.repository.UserRepository;
 import com.becoder.service.UserService;
 import com.becoder.util.CommonUtil;
+
 import jakarta.servlet.http.HttpServletRequest;
 
 @Service
