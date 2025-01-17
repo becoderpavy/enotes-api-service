@@ -12,6 +12,7 @@ import org.springframework.web.bind.annotation.RestController;
 import com.becoder.dto.LoginRequest;
 import com.becoder.dto.LoginResponse;
 import com.becoder.dto.UserRequest;
+import com.becoder.endpoint.AuthEndpoint;
 import com.becoder.service.AuthService;
 import com.becoder.util.CommonUtil;
 
@@ -20,13 +21,12 @@ import lombok.extern.slf4j.Slf4j;
 
 @Slf4j
 @RestController
-@RequestMapping("/api/v1/auth")
-public class AuthController {
+public class AuthController implements AuthEndpoint{
 
 	@Autowired
 	private AuthService authService;
 
-	@PostMapping("/register")
+	@Override
 	public ResponseEntity<?> registerUser(@RequestBody UserRequest userDto, HttpServletRequest request) throws Exception {
 		log.info("AuthController : registerUser() : Exceution Start");
 		String url = CommonUtil.getUrl(request);
@@ -39,7 +39,7 @@ public class AuthController {
 		return CommonUtil.createBuildResponseMessage("Register success", HttpStatus.CREATED);
 	}
 
-	@PostMapping("/login")
+	@Override
 	public ResponseEntity<?> login(@RequestBody LoginRequest loginRequest) throws Exception {
 
 		LoginResponse loginResponse = authService.login(loginRequest);
