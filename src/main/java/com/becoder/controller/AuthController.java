@@ -12,19 +12,19 @@ import org.springframework.web.bind.annotation.RestController;
 import com.becoder.dto.LoginRequest;
 import com.becoder.dto.LoginResponse;
 import com.becoder.dto.UserRequest;
+import com.becoder.endpoint.AuthEndpoint;
 import com.becoder.service.AuthService;
 import com.becoder.util.CommonUtil;
 
 import jakarta.servlet.http.HttpServletRequest;
 
 @RestController
-@RequestMapping("/api/v1/auth")
-public class AuthController {
+public class AuthController implements AuthEndpoint{
 
 	@Autowired
 	private AuthService authService;
 
-	@PostMapping("/")
+	@Override
 	public ResponseEntity<?> registerUser(@RequestBody UserRequest userDto, HttpServletRequest request) throws Exception {
 		String url = CommonUtil.getUrl(request);
 		Boolean register = authService.register(userDto, url);
@@ -34,7 +34,7 @@ public class AuthController {
 		return CommonUtil.createErrorResponseMessage("Register failed", HttpStatus.INTERNAL_SERVER_ERROR);
 	}
 
-	@PostMapping("/login")
+	@Override
 	public ResponseEntity<?> login(@RequestBody LoginRequest loginRequest) throws Exception {
 
 		LoginResponse loginResponse = authService.login(loginRequest);
