@@ -20,10 +20,10 @@ import jakarta.servlet.http.HttpServletRequest;
 
 @RestController
 @RequestMapping("/api/v1/home")
-public class HomeController implements HomeEndpoint{
+public class HomeController implements HomeEndpoint {
 
-	Logger log=LoggerFactory.getLogger(HomeController.class);
-	
+	Logger log = LoggerFactory.getLogger(HomeController.class);
+
 	@Autowired
 	private HomeService homeService;
 
@@ -31,32 +31,30 @@ public class HomeController implements HomeEndpoint{
 	private UserService userService;
 
 	@Override
-	public ResponseEntity<?> verifyUserAccount(@RequestParam Integer uid, @RequestParam String code) throws Exception {
+	public ResponseEntity<?> verifyUserAccount(Integer uid, String code) throws Exception {
 		log.info("HomeController : verifyUserAccount() : Exceution Start");
 		Boolean verifyAccount = homeService.verifyAccount(uid, code);
 		if (verifyAccount)
 			return CommonUtil.createBuildResponseMessage("Account verification success", HttpStatus.OK);
-		
+
 		log.info("HomeController : verifyUserAccount() : Exceution End");
 		return CommonUtil.createErrorResponseMessage("Invalid Verification link", HttpStatus.BAD_REQUEST);
 	}
 
 	@Override
-	public ResponseEntity<?> sendEmailForPasswordReset(@RequestParam String email, HttpServletRequest request)
-			throws Exception {
+	public ResponseEntity<?> sendEmailForPasswordReset(String email, HttpServletRequest request) throws Exception {
 		userService.sendEmailPasswordReset(email, request);
 		return CommonUtil.createBuildResponseMessage("Email Send Success !! Check Email Reset Password", HttpStatus.OK);
 	}
 
 	@Override
-	public ResponseEntity<?> verifyPasswordResetLink(@RequestParam Integer uid, @RequestParam String code)
-			throws Exception {
+	public ResponseEntity<?> verifyPasswordResetLink(Integer uid, String code) throws Exception {
 		userService.verifyPswdResetLink(uid, code);
 		return CommonUtil.createBuildResponseMessage("verification success", HttpStatus.OK);
 	}
 
 	@Override
-	public ResponseEntity<?> resetPassword(@RequestBody PswdResetRequest pswdResetRequest) throws Exception {
+	public ResponseEntity<?> resetPassword(PswdResetRequest pswdResetRequest) throws Exception {
 		userService.resetPassword(pswdResetRequest);
 		return CommonUtil.createBuildResponseMessage("Password reset succes", HttpStatus.OK);
 	}

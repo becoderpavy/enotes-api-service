@@ -1,5 +1,8 @@
 package com.becoder.endpoint;
 
+import static com.becoder.util.Constants.ROLE_ADMIN;
+import static com.becoder.util.Constants.ROLE_ADMIN_USER;
+
 import org.springframework.http.ResponseEntity;
 import org.springframework.security.access.prepost.PreAuthorize;
 import org.springframework.web.bind.annotation.DeleteMapping;
@@ -15,23 +18,23 @@ import com.becoder.dto.CategoryDto;
 public interface CategoryEndpoint {
 
 	@PostMapping("/save")
-	@PreAuthorize("hasRole('ADMIN')")
+	@PreAuthorize(ROLE_ADMIN)
 	public ResponseEntity<?> saveCategory(@RequestBody CategoryDto categoryDto);
 	
 	@GetMapping("/")
-	@PreAuthorize("hasRole('ADMIN')")
+	@PreAuthorize(ROLE_ADMIN)
 	public ResponseEntity<?> getAllCategory();
 	
 	@GetMapping("/active")
-	@PreAuthorize("hasAnyRole('USER','ADMIN')")
+	@PreAuthorize(ROLE_ADMIN_USER)
 	public ResponseEntity<?> getActiveCategory();
 	
 	@GetMapping("/{id}")
-	@PreAuthorize("hasRole('ADMIN')")
+	@PreAuthorize(ROLE_ADMIN)
 	public ResponseEntity<?> getCategortDetailsById(@PathVariable Integer id) throws Exception ;
 	
 	@DeleteMapping("/{id}")
-	@PreAuthorize("hasRole('ADMIN')")
+	@PreAuthorize(ROLE_ADMIN)
 	public ResponseEntity<?> deleteCategoryById(@PathVariable Integer id);
 	
 	
