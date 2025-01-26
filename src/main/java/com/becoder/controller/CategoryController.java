@@ -2,13 +2,10 @@ package com.becoder.controller;
 
 import java.util.List;
 
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.util.CollectionUtils;
 import org.springframework.util.ObjectUtils;
-import org.springframework.web.bind.annotation.PathVariable;
-import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RestController;
 
 import com.becoder.dto.CategoryDto;
@@ -23,8 +20,12 @@ import lombok.extern.slf4j.Slf4j;
 @RestController
 public class CategoryController implements CategoryEndpoint {
 
-	@Autowired
 	private CategoryService categoryService;
+
+	public CategoryController(CategoryService categoryService) {
+		super();
+		this.categoryService = categoryService;
+	}
 
 	@Override
 	public ResponseEntity<?> saveCategory(CategoryDto categoryDto) {

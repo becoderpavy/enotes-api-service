@@ -1,0 +1,4 @@
+2025-26-24 01:24:00.428 INFO  [main] c.b.EnotesApiServiceApplicationTests - Started EnotesApiServiceApplicationTests in 15.999 seconds (process running for 18.89)
+2025-26-24 01:24:01.603 INFO  [SpringApplicationShutdownHook] o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-26-24 01:24:01.607 INFO  [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2025-26-24 01:24:01.628 INFO  [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.

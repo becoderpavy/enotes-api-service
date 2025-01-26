@@ -1,0 +1,135 @@
+2025-25-10 19:10:12.987 INFO  [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-25-10 19:10:12.989 INFO  [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2025-25-10 19:10:12.993 INFO  [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet - Completed initialization in 3 ms
+2025-25-10 19:10:13.623 INFO  [http-nio-8080-exec-9] o.s.api.AbstractOpenApiResource - Init duration for springdoc-openapi is: 331 ms
+2025-25-10 19:10:26.319 INFO  [File Watcher] o.s.b.d.a.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener - Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2025-25-10 19:10:26.326 INFO  [Thread-5] o.a.coyote.http11.Http11NioProtocol - Stopping ProtocolHandler ["http-nio-8080"]
+2025-25-10 19:10:26.457 INFO  [Thread-5] o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-25-10 19:10:26.459 INFO  [Thread-5] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2025-25-10 19:10:26.469 INFO  [Thread-5] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2025-25-10 19:10:26.571 INFO  [restartedMain] c.b.EnotesApiServiceApplication - Starting EnotesApiServiceApplication using Java 17.0.7 with PID 11884 (D:\Youtube\Projects\enotes-api-service\enotes-api-service\target\classes started by Pabitra in D:\Youtube\Projects\enotes-api-service\enotes-api-service)
+2025-25-10 19:10:26.571 INFO  [restartedMain] c.b.EnotesApiServiceApplication - The following 1 profile is active: "dev"
+2025-25-10 19:10:26.780 INFO  [restartedMain] o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-25-10 19:10:26.805 INFO  [restartedMain] o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 24 ms. Found 7 JPA repository interfaces.
+2025-25-10 19:10:26.962 INFO  [restartedMain] o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2025-25-10 19:10:26.962 INFO  [restartedMain] o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2025-25-10 19:10:26.963 INFO  [restartedMain] o.a.catalina.core.StandardService - Starting service [Tomcat]
+2025-25-10 19:10:26.963 INFO  [restartedMain] o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.30]
+2025-25-10 19:10:26.986 INFO  [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2025-25-10 19:10:26.987 INFO  [restartedMain] o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 413 ms
+2025-25-10 19:10:27.044 INFO  [restartedMain] o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-25-10 19:10:27.047 INFO  [restartedMain] o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2025-25-10 19:10:27.057 INFO  [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-25-10 19:10:27.058 INFO  [restartedMain] com.zaxxer.hikari.HikariDataSource - HikariPool-2 - Starting...
+2025-25-10 19:10:27.075 INFO  [restartedMain] com.zaxxer.hikari.pool.HikariPool - HikariPool-2 - Added connection com.mysql.cj.jdbc.ConnectionImpl@82eb608
+2025-25-10 19:10:27.075 INFO  [restartedMain] com.zaxxer.hikari.HikariDataSource - HikariPool-2 - Start completed.
+2025-25-10 19:10:27.076 WARN  [restartedMain] org.hibernate.orm.deprecation - HHH90000025: MySQL8Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-25-10 19:10:27.076 WARN  [restartedMain] org.hibernate.orm.deprecation - HHH90000026: MySQL8Dialect has been deprecated; use org.hibernate.dialect.MySQLDialect instead
+2025-25-10 19:10:27.229 INFO  [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-25-10 19:10:27.230 INFO  [restartedMain] o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-25-10 19:10:27.342 INFO  [restartedMain] o.s.s.c.a.a.c.InitializeAuthenticationProviderBeanManagerConfigurer$InitializeAuthenticationProviderManagerConfigurer - Global AuthenticationManager configured with AuthenticationProvider bean with name authenticationProvider
+2025-25-10 19:10:27.343 WARN  [restartedMain] o.s.s.c.a.a.c.InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer - Global AuthenticationManager configured with an AuthenticationProvider bean. UserDetailsService beans will not be used for username/password login. Consider removing the AuthenticationProvider bean. Alternatively, consider using the UserDetailsService in a manually instantiated DaoAuthenticationProvider.
+2025-25-10 19:10:27.488 WARN  [restartedMain] o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-25-10 19:10:27.750 INFO  [restartedMain] o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2025-25-10 19:10:27.762 INFO  [restartedMain] o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2025-25-10 19:10:27.765 INFO  [restartedMain] o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/'
+2025-25-10 19:10:27.771 INFO  [restartedMain] c.b.EnotesApiServiceApplication - Started EnotesApiServiceApplication in 1.235 seconds (process running for 44.192)
+2025-25-10 19:10:27.776 INFO  [restartedMain] o.s.b.d.a.ConditionEvaluationDeltaLoggingListener - Condition evaluation delta:
+
+
+==========================
+CONDITION EVALUATION DELTA
+==========================
+
+
+Positive matches:
+-----------------
+
+    None
+
+
+Negative matches:
+-----------------
+
+   SpringDocConfigProperties:
+      Did not match:
+         - @ConditionalOnProperty (springdoc.api-docs.enabled) found different value in property 'springdoc.api-docs.enabled' (OnPropertyCondition)
+
+   SpringDocConfiguration:
+      Did not match:
+         - @ConditionalOnProperty (springdoc.api-docs.enabled) found different value in property 'springdoc.api-docs.enabled' (OnPropertyCondition)
+      Matched:
+         - @ConditionalOnWebApplication (required) found 'session' scope (OnWebApplicationCondition)
+
+   SpringDocPageableConfiguration:
+      Did not match:
+         - @ConditionalOnProperty (springdoc.api-docs.enabled) found different value in property 'springdoc.api-docs.enabled' (OnPropertyCondition)
+      Matched:
+         - @ConditionalOnClass found required class 'org.springframework.data.domain.Pageable' (OnClassCondition)
+         - @ConditionalOnWebApplication (required) found 'session' scope (OnWebApplicationCondition)
+
+   SpringDocSecurityConfiguration:
+      Did not match:
+         - @ConditionalOnExpression (#{${springdoc.api-docs.enabled:true} and ${springdoc.enable-spring-security:true}}) resulted in false (OnExpressionCondition)
+      Matched:
+         - @ConditionalOnClass found required class 'org.springframework.security.web.SecurityFilterChain' (OnClassCondition)
+         - @ConditionalOnWebApplication (required) found 'session' scope (OnWebApplicationCondition)
+
+   SpringDocSortConfiguration:
+      Did not match:
+         - @ConditionalOnProperty (springdoc.api-docs.enabled) found different value in property 'springdoc.api-docs.enabled' (OnPropertyCondition)
+      Matched:
+         - @ConditionalOnClass found required class 'org.springframework.data.domain.Sort' (OnClassCondition)
+         - @ConditionalOnWebApplication (required) found 'session' scope (OnWebApplicationCondition)
+
+   SpringDocUIConfiguration:
+      Did not match:
+         - @ConditionalOnBean (types: org.springdoc.core.configuration.SpringDocConfiguration; SearchStrategy: all) did not find any beans of type org.springdoc.core.configuration.SpringDocConfiguration (OnBeanCondition)
+      Matched:
+         - @ConditionalOnWebApplication (required) found 'session' scope (OnWebApplicationCondition)
+
+   SpringDocWebMvcConfiguration:
+      Did not match:
+         - @ConditionalOnProperty (springdoc.api-docs.enabled) found different value in property 'springdoc.api-docs.enabled' (OnPropertyCondition)
+      Matched:
+         - found 'session' scope (OnWebApplicationCondition)
+
+   SwaggerConfig:
+      Did not match:
+         - @ConditionalOnBean (types: org.springdoc.core.configuration.SpringDocConfiguration; SearchStrategy: all) did not find any beans of type org.springdoc.core.configuration.SpringDocConfiguration (OnBeanCondition)
+      Matched:
+         - found 'session' scope (OnWebApplicationCondition)
+         - @ConditionalOnProperty (springdoc.swagger-ui.enabled) matched (OnPropertyCondition)
+
+   SwaggerUiConfigParameters:
+      Did not match:
+         - @ConditionalOnBean (types: org.springdoc.core.configuration.SpringDocConfiguration; SearchStrategy: all) did not find any beans of type org.springdoc.core.configuration.SpringDocConfiguration (OnBeanCondition)
+      Matched:
+         - @ConditionalOnProperty (springdoc.swagger-ui.enabled) matched (OnPropertyCondition)
+
+   SwaggerUiConfigProperties:
+      Did not match:
+         - @ConditionalOnBean (types: org.springdoc.core.configuration.SpringDocConfiguration; SearchStrategy: all) did not find any beans of type org.springdoc.core.configuration.SpringDocConfiguration (OnBeanCondition)
+      Matched:
+         - @ConditionalOnProperty (springdoc.swagger-ui.enabled) matched (OnPropertyCondition)
+
+   SwaggerUiOAuthProperties:
+      Did not match:
+         - @ConditionalOnBean (types: org.springdoc.core.configuration.SpringDocConfiguration; SearchStrategy: all) did not find any beans of type org.springdoc.core.configuration.SpringDocConfiguration (OnBeanCondition)
+      Matched:
+         - @ConditionalOnProperty (springdoc.swagger-ui.enabled) matched (OnPropertyCondition)
+
+
+Exclusions:
+-----------
+
+    None
+
+
+Unconditional classes:
+----------------------
+
+    None
+
+
+

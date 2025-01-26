@@ -1,0 +1,9 @@
+2025-25-38 20:38:59.325 INFO  [File Watcher] o.s.b.d.a.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener - Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2025-25-38 20:38:59.330 INFO  [Thread-27] o.a.coyote.http11.Http11NioProtocol - Stopping ProtocolHandler ["http-nio-8080"]
+2025-25-38 20:38:59.497 INFO  [Thread-27] o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-25-38 20:38:59.499 INFO  [Thread-27] com.zaxxer.hikari.HikariDataSource - HikariPool-7 - Shutdown initiated...
+2025-25-38 20:38:59.508 INFO  [Thread-27] com.zaxxer.hikari.HikariDataSource - HikariPool-7 - Shutdown completed.
+2025-25-38 20:38:59.621 INFO  [restartedMain] c.b.EnotesApiServiceApplication - Starting EnotesApiServiceApplication using Java 17.0.7 with PID 17052 (D:\Youtube\Projects\enotes-api-service\enotes-api-service\target\classes started by Pabitra in D:\Youtube\Projects\enotes-api-service\enotes-api-service)
+2025-25-38 20:38:59.622 INFO  [restartedMain] c.b.EnotesApiServiceApplication - The following 1 profile is active: "dev"
+2025-25-38 20:38:59.883 INFO  [restartedMain] o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-25-38 20:38:59.919 INFO  [restartedMain] o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 35 ms. Found 7 JPA repository interfaces.

@@ -1,0 +1,2 @@
+2025-25-45 20:45:44.461 ERROR [http-nio-8080-exec-5] c.b.exception.GlobalExceptionHandler - GlobalExceptionHandler : handleException() : No static resource enotes-api-doc/Authentication.
+2025-25-45 20:45:44.478 WARN  [http-nio-8080-exec-5] o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - Resolved [org.springframework.web.servlet.resource.NoResourceFoundException: No static resource enotes-api-doc/Authentication.]

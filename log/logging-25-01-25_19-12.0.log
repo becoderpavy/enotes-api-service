@@ -1,0 +1,5 @@
+2025-25-12 19:12:02.875 INFO  [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-25-12 19:12:02.876 INFO  [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2025-25-12 19:12:02.878 INFO  [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet - Completed initialization in 1 ms
+2025-25-12 19:12:02.884 ERROR [http-nio-8080-exec-1] c.b.exception.GlobalExceptionHandler - GlobalExceptionHandler : handleException() : No static resource swagger-ui/index.html.
+2025-25-12 19:12:02.895 WARN  [http-nio-8080-exec-1] o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - Resolved [org.springframework.web.servlet.resource.NoResourceFoundException: No static resource swagger-ui/index.html.]

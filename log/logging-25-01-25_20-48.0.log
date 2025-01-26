@@ -1,0 +1,2 @@
+2025-25-48 20:48:07.158 ERROR [http-nio-8080-exec-8] c.b.exception.GlobalExceptionHandler - GlobalExceptionHandler : handleException() : No static resource swagger-ui/Authentication.
+2025-25-48 20:48:07.163 WARN  [http-nio-8080-exec-8] o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - Resolved [org.springframework.web.servlet.resource.NoResourceFoundException: No static resource swagger-ui/Authentication.]

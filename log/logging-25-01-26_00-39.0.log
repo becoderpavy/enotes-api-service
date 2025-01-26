@@ -1,0 +1,5 @@
+2025-26-39 00:39:40.795 INFO  [RMI TCP Connection(260)-127.0.0.1] o.s.b.a.SpringApplicationAdminMXBeanRegistrar$SpringApplicationAdmin - Application shutdown requested.
+2025-26-39 00:39:40.798 INFO  [RMI TCP Connection(260)-127.0.0.1] o.a.coyote.http11.Http11NioProtocol - Stopping ProtocolHandler ["http-nio-8080"]
+2025-26-39 00:39:41.027 INFO  [RMI TCP Connection(260)-127.0.0.1] o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-26-39 00:39:41.028 INFO  [RMI TCP Connection(260)-127.0.0.1] com.zaxxer.hikari.HikariDataSource - HikariPool-47 - Shutdown initiated...
+2025-26-39 00:39:41.038 INFO  [RMI TCP Connection(260)-127.0.0.1] com.zaxxer.hikari.HikariDataSource - HikariPool-47 - Shutdown completed.

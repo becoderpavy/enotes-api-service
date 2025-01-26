@@ -1,0 +1,51 @@
+2025-25-30 19:30:13.744 INFO  [File Watcher] o.s.b.d.a.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener - Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2025-25-30 19:30:13.750 INFO  [Thread-39] o.a.coyote.http11.Http11NioProtocol - Stopping ProtocolHandler ["http-nio-8080"]
+2025-25-30 19:30:13.876 INFO  [Thread-39] o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-25-30 19:30:13.876 INFO  [Thread-39] com.zaxxer.hikari.HikariDataSource - HikariPool-10 - Shutdown initiated...
+2025-25-30 19:30:13.882 INFO  [Thread-39] com.zaxxer.hikari.HikariDataSource - HikariPool-10 - Shutdown completed.
+2025-25-30 19:30:13.967 INFO  [restartedMain] c.b.EnotesApiServiceApplication - Starting EnotesApiServiceApplication using Java 17.0.7 with PID 11884 (D:\Youtube\Projects\enotes-api-service\enotes-api-service\target\classes started by Pabitra in D:\Youtube\Projects\enotes-api-service\enotes-api-service)
+2025-25-30 19:30:13.967 INFO  [restartedMain] c.b.EnotesApiServiceApplication - The following 1 profile is active: "dev"
+2025-25-30 19:30:14.142 INFO  [restartedMain] o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-25-30 19:30:14.167 INFO  [restartedMain] o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 25 ms. Found 7 JPA repository interfaces.
+2025-25-30 19:30:14.297 INFO  [restartedMain] o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2025-25-30 19:30:14.298 INFO  [restartedMain] o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2025-25-30 19:30:14.298 INFO  [restartedMain] o.a.catalina.core.StandardService - Starting service [Tomcat]
+2025-25-30 19:30:14.298 INFO  [restartedMain] o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.30]
+2025-25-30 19:30:14.313 INFO  [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2025-25-30 19:30:14.313 INFO  [restartedMain] o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 345 ms
+2025-25-30 19:30:14.360 INFO  [restartedMain] o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-25-30 19:30:14.363 INFO  [restartedMain] o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2025-25-30 19:30:14.369 INFO  [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-25-30 19:30:14.370 INFO  [restartedMain] com.zaxxer.hikari.HikariDataSource - HikariPool-11 - Starting...
+2025-25-30 19:30:14.383 INFO  [restartedMain] com.zaxxer.hikari.pool.HikariPool - HikariPool-11 - Added connection com.mysql.cj.jdbc.ConnectionImpl@30efee6c
+2025-25-30 19:30:14.383 INFO  [restartedMain] com.zaxxer.hikari.HikariDataSource - HikariPool-11 - Start completed.
+2025-25-30 19:30:14.384 WARN  [restartedMain] org.hibernate.orm.deprecation - HHH90000025: MySQL8Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-25-30 19:30:14.384 WARN  [restartedMain] org.hibernate.orm.deprecation - HHH90000026: MySQL8Dialect has been deprecated; use org.hibernate.dialect.MySQLDialect instead
+2025-25-30 19:30:14.483 INFO  [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-25-30 19:30:14.483 INFO  [restartedMain] o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-25-30 19:30:14.591 INFO  [restartedMain] o.s.s.c.a.a.c.InitializeAuthenticationProviderBeanManagerConfigurer$InitializeAuthenticationProviderManagerConfigurer - Global AuthenticationManager configured with AuthenticationProvider bean with name authenticationProvider
+2025-25-30 19:30:14.592 WARN  [restartedMain] o.s.s.c.a.a.c.InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer - Global AuthenticationManager configured with an AuthenticationProvider bean. UserDetailsService beans will not be used for username/password login. Consider removing the AuthenticationProvider bean. Alternatively, consider using the UserDetailsService in a manually instantiated DaoAuthenticationProvider.
+2025-25-30 19:30:14.748 WARN  [restartedMain] o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-25-30 19:30:15.043 INFO  [restartedMain] o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2025-25-30 19:30:15.054 INFO  [restartedMain] o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2025-25-30 19:30:15.058 INFO  [restartedMain] o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/'
+2025-25-30 19:30:15.066 INFO  [restartedMain] c.b.EnotesApiServiceApplication - Started EnotesApiServiceApplication in 1.12 seconds (process running for 1231.487)
+2025-25-30 19:30:15.069 INFO  [restartedMain] o.s.b.d.a.ConditionEvaluationDeltaLoggingListener - Condition evaluation unchanged
+2025-25-30 19:30:19.559 INFO  [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-25-30 19:30:19.560 INFO  [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2025-25-30 19:30:19.562 INFO  [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet - Completed initialization in 2 ms
+2025-25-30 19:30:19.877 INFO  [http-nio-8080-exec-9] o.s.api.AbstractOpenApiResource - Init duration for springdoc-openapi is: 109 ms
+2025-25-30 19:30:25.117 INFO  [http-nio-8080-exec-10] c.becoder.controller.AuthController - AuthController : registerUser() : Exceution Start
+2025-25-30 19:30:25.118 INFO  [http-nio-8080-exec-10] c.b.service.impl.AuthServiceImpl - AuthServiceImpl : register() : Exceution Start
+2025-25-30 19:30:25.120 ERROR [http-nio-8080-exec-10] c.b.exception.GlobalExceptionHandler - GlobalExceptionHandler : handleIllegalArgumentException : email is invalid
+2025-25-30 19:30:25.123 WARN  [http-nio-8080-exec-10] o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - Resolved [java.lang.IllegalArgumentException: email is invalid]
+2025-25-30 19:30:38.951 INFO  [http-nio-8080-exec-5] c.becoder.controller.AuthController - AuthController : registerUser() : Exceution Start
+2025-25-30 19:30:38.951 INFO  [http-nio-8080-exec-5] c.b.service.impl.AuthServiceImpl - AuthServiceImpl : register() : Exceution Start
+2025-25-30 19:30:39.086 ERROR [http-nio-8080-exec-5] c.b.exception.GlobalExceptionHandler - GlobalExceptionHandler : handleIllegalArgumentException : mobno is invalid
+2025-25-30 19:30:39.087 WARN  [http-nio-8080-exec-5] o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - Resolved [java.lang.IllegalArgumentException: mobno is invalid]
+2025-25-30 19:30:53.125 INFO  [http-nio-8080-exec-4] c.becoder.controller.AuthController - AuthController : registerUser() : Exceution Start
+2025-25-30 19:30:53.125 INFO  [http-nio-8080-exec-4] c.b.service.impl.AuthServiceImpl - AuthServiceImpl : register() : Exceution Start
+2025-25-30 19:30:53.424 INFO  [http-nio-8080-exec-4] c.b.service.impl.AuthServiceImpl - Message : User Register success
+2025-25-30 19:30:58.442 INFO  [http-nio-8080-exec-4] c.b.service.impl.AuthServiceImpl - Message : email send success
+2025-25-30 19:30:58.442 INFO  [http-nio-8080-exec-4] c.b.service.impl.AuthServiceImpl - AuthServiceImpl : register() : Exceution End
+2025-25-30 19:30:58.442 INFO  [http-nio-8080-exec-4] c.becoder.controller.AuthController - AuthController : registerUser() : Exceution End

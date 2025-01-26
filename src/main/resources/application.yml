@@ -36,9 +36,27 @@ spring:
           auth: true
           starttls:
             enable: true    
+springdoc:
+  swagger-ui:
+    enabled: true
+    path: /enotes-doc
+    tryItOutEnabled: false
+    operationsSorter: method
+    tagsSorter: alpha
+    authorizations: Authorization
+    filter: false
+  api-docs:
+    enabled: true
+    path: /enotes-api-doc
+  packages-to-scan: com.becoder.controller  
+    
+  
+
 file:
   upload:
     path: notes/
+# api-docs.enabled=false if you want to disable springdoc-openapi endpoints
+# swagger-ui.enabled=false to disable the swagger-ui endpoint.
 ---
 # test config
 spring:

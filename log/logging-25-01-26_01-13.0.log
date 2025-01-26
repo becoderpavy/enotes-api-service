@@ -1,0 +1,26 @@
+2025-26-13 01:13:43.435 INFO  [main] o.s.t.c.s.AnnotationConfigContextLoaderUtils - Could not detect default configuration classes for test class [com.becoder.EnotesApiServiceApplicationTests]: EnotesApiServiceApplicationTests does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2025-26-13 01:13:43.620 INFO  [main] o.s.b.t.c.SpringBootTestContextBootstrapper - Found @SpringBootConfiguration com.becoder.EnotesApiServiceApplication for test class com.becoder.EnotesApiServiceApplicationTests
+2025-26-13 01:13:43.937 INFO  [main] o.s.b.d.r.RestartApplicationListener - Restart disabled due to context in which it is running
+2025-26-13 01:13:44.600 INFO  [main] c.b.EnotesApiServiceApplicationTests - Starting EnotesApiServiceApplicationTests using Java 17.0.7 with PID 18588 (started by Pabitra in D:\Youtube\Projects\enotes-api-service\enotes-api-service)
+2025-26-13 01:13:44.602 INFO  [main] c.b.EnotesApiServiceApplicationTests - The following 1 profile is active: "dev"
+2025-26-13 01:13:46.960 INFO  [main] o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-26-13 01:13:47.137 INFO  [main] o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 164 ms. Found 7 JPA repository interfaces.
+2025-26-13 01:13:48.504 INFO  [main] o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-26-13 01:13:48.626 INFO  [main] org.hibernate.Version - HHH000412: Hibernate ORM core version 6.5.3.Final
+2025-26-13 01:13:48.697 INFO  [main] o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2025-26-13 01:13:49.460 INFO  [main] o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-26-13 01:13:49.535 INFO  [main] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2025-26-13 01:13:50.178 INFO  [main] com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@64a7ad02
+2025-26-13 01:13:50.183 INFO  [main] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2025-26-13 01:13:50.307 WARN  [main] org.hibernate.orm.deprecation - HHH90000025: MySQL8Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-26-13 01:13:50.311 WARN  [main] org.hibernate.orm.deprecation - HHH90000026: MySQL8Dialect has been deprecated; use org.hibernate.dialect.MySQLDialect instead
+2025-26-13 01:13:52.421 INFO  [main] o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-26-13 01:13:52.429 INFO  [main] o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-26-13 01:13:53.434 INFO  [main] o.s.s.c.a.a.c.InitializeAuthenticationProviderBeanManagerConfigurer$InitializeAuthenticationProviderManagerConfigurer - Global AuthenticationManager configured with AuthenticationProvider bean with name authenticationProvider
+2025-26-13 01:13:53.435 WARN  [main] o.s.s.c.a.a.c.InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer - Global AuthenticationManager configured with an AuthenticationProvider bean. UserDetailsService beans will not be used for username/password login. Consider removing the AuthenticationProvider bean. Alternatively, consider using the UserDetailsService in a manually instantiated DaoAuthenticationProvider.
+2025-26-13 01:13:53.651 INFO  [main] o.s.d.j.r.query.QueryEnhancerFactory - Hibernate is in classpath; If applicable, HQL parser will be used.
+2025-26-13 01:13:55.198 WARN  [main] o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-26-13 01:13:56.993 INFO  [main] c.b.EnotesApiServiceApplicationTests - Started EnotesApiServiceApplicationTests in 13.071 seconds (process running for 15.221)
+2025-26-13 01:13:58.083 INFO  [SpringApplicationShutdownHook] o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-26-13 01:13:58.086 INFO  [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2025-26-13 01:13:58.112 INFO  [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.

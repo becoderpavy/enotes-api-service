@@ -1,0 +1,10 @@
+2025-26-10 01:10:51.600 INFO  [main] o.s.t.c.s.AnnotationConfigContextLoaderUtils - Could not detect default configuration classes for test class [com.becoder.EnotesApiServiceApplicationTests]: EnotesApiServiceApplicationTests does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2025-26-10 01:10:51.823 INFO  [main] o.s.b.t.c.SpringBootTestContextBootstrapper - Found @SpringBootConfiguration com.becoder.EnotesApiServiceApplication for test class com.becoder.EnotesApiServiceApplicationTests
+2025-26-10 01:10:52.240 INFO  [main] o.s.b.d.r.RestartApplicationListener - Restart disabled due to context in which it is running
+2025-26-10 01:10:52.847 INFO  [main] c.b.EnotesApiServiceApplicationTests - Starting EnotesApiServiceApplicationTests using Java 17.0.7 with PID 16660 (started by Pabitra in D:\Youtube\Projects\enotes-api-service\enotes-api-service)
+2025-26-10 01:10:52.851 INFO  [main] c.b.EnotesApiServiceApplicationTests - The following 1 profile is active: "dev"
+2025-26-10 01:10:56.503 INFO  [main] o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-26-10 01:10:56.654 INFO  [main] o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 139 ms. Found 7 JPA repository interfaces.
+2025-26-10 01:10:58.342 INFO  [main] o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-26-10 01:10:58.600 INFO  [main] org.hibernate.Version - HHH000412: Hibernate ORM core version 6.5.3.Final
+2025-26-10 01:10:58.744 INFO  [main] o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled

@@ -1,0 +1,6 @@
+2025-25-21 18:21:38.121 INFO  [http-nio-8080-exec-4] c.becoder.controller.AuthController - AuthController : registerUser() : Exceution Start
+2025-25-21 18:21:38.124 INFO  [http-nio-8080-exec-4] c.b.service.impl.AuthServiceImpl - AuthServiceImpl : register() : Exceution Start
+2025-25-21 18:21:38.723 INFO  [http-nio-8080-exec-4] c.b.service.impl.AuthServiceImpl - Message : User Register success
+2025-25-21 18:21:44.977 INFO  [http-nio-8080-exec-4] c.b.service.impl.AuthServiceImpl - Message : email send success
+2025-25-21 18:21:44.977 INFO  [http-nio-8080-exec-4] c.b.service.impl.AuthServiceImpl - AuthServiceImpl : register() : Exceution End
+2025-25-21 18:21:44.978 INFO  [http-nio-8080-exec-4] c.becoder.controller.AuthController - AuthController : registerUser() : Exceution End

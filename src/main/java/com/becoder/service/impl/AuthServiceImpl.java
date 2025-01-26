@@ -57,8 +57,12 @@ public class AuthServiceImpl implements AuthService {
 	@Autowired
 	private JwtService jwtService;
 
+	@Autowired
+	private outService outService;
+	
 	@Override
 	public Boolean register(UserRequest userDto, String url) throws Exception {
+		outService.save();
 		log.info("AuthServiceImpl : register() : Exceution Start");
 		validation.userValidation(userDto);
 		User user = mapper.map(userDto, User.class);
