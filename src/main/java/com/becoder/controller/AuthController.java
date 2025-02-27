@@ -4,7 +4,6 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.util.ObjectUtils;
-import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RestController;
 
 import com.becoder.dto.LoginRequest;
@@ -28,7 +27,7 @@ public class AuthController implements AuthEndpoint{
 	public ResponseEntity<?> registerUser(UserRequest userDto, HttpServletRequest request) throws Exception {
 		log.info("AuthController : registerUser() : Exceution Start");
 		String url = CommonUtil.getUrl(request);
-		Boolean register = authService.register(userDto, url);
+		boolean register = authService.register(userDto, url);
 		if (!register) {
 			log.info("Error : {}","Register failed");
 			return CommonUtil.createErrorResponseMessage("Register failed", HttpStatus.INTERNAL_SERVER_ERROR);
